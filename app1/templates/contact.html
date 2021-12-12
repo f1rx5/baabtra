@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+</head>
+<body>
+    <div class="maindiv">
+        <div class="headerdiv">
+            <div class="logodiv">
+                <img class="logo" src="{% static 'images/logo.png'%}" alt="">
+            </div>
+            <div class="buttondiv">
+                <button style="background-color: rgb(148, 148, 255);color: #33322d;">Login</button>
+                <button style="background-color: chartreuse; color: #33322d;">Register</button>
+            </div>
+        </div>
+        <div class="navdiv">
+            <a href="/home/">HOME</a>
+            <a href="/courses/">COURSES</a>
+            <a href="/contact/">CONTACT US</a>
+        </div>
+        <div class="formdiv">
+            <table align="center" border="1">
+                <tr>
+                    <td colspan="2"><h2 align="center">Contact us</h2></td>
+                </tr>
+                <tr>
+                    <td><label for="">Name</label></td>
+                    <td><input class="text" type="text" placeholder="enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Gender</label></td>
+                    <td><input style="margin-left: 40px;" type="radio" name="gender">Male <input type="radio" name="gender">Female</td>
+                </tr>
+                <tr>
+                    <td><label for="">Date of Birth</label></td>
+                    <td><input class="text" type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Mobile</label></td>
+                    <td><input class="text" type="number" min="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="">E-mail</label></td>
+                    <td><input class="text" type="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Address</label></td>
+                    <td><textarea class="text" name="" id="" cols="" rows="5" style="height: 100px;"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button style="float: right;margin-right: 30px;background-color: darkolivegreen;">Submit</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footcontainer">
+            <div class="footgrid">
+                baabtra<br/>
+                Mentoring partner
+            </div>
+            <div class="footgrid">
+                <b>Email :</b> info@baabtra.com<br/>
+                <b>Phone :</b> +91-8592 058 444
+            </div>
+            <div class="footgrid">
+                <b>Address:</b> <br/>
+                5<sup>th</sup> Floor, CaFIT Square,<br/>Hilite Business Park, Kozhikode
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

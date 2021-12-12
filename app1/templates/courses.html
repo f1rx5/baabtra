@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="{% static 'css/courses.css' %}">
+</head>
+<body>
+    <div class="maindiv">
+        <div class="headerdiv">
+            <div class="logodiv">
+                <img class="logo" src="{% static 'images/logo.png'%}" alt="">
+            </div>
+            <div class="buttondiv">
+                <button style="background-color: rgb(148, 148, 255);color: #33322d;">Login</button>
+                <button style="background-color: chartreuse; color: #33322d;">Register</button>
+            </div>
+        </div>
+        <div class="navdiv">
+            <a href="/home/">HOME</a>
+            <a href="/courses/">COURSES</a>
+            <a href="/contact/">CONTACT US</a>
+        </div>
+        <div class="paradiv">
+            <h1>Explore Our Internship Program</h1>
+            <p>baabtra.com offers you cources and training programs that will enable you to master programming in depth. Enroll and start learning with the experts in the industry. We offer PHP training with the Laravel Framework, Python Training with Django Framework , Angular Training and Node.js Training</p>
+        </div>
+        <div class="crsecontainer">
+            <div class="crsegrid">
+                <img src="{% static 'images/python.png' %}" alt="" style="height: 150px;width: 150px;">
+                <h3>Python Full Stack Development</h3>
+                <p>Python is a high-level, general-purpose and a very popular programming language. Python programming language (latest Python 3) is being used in web development, Machine Learning applications, along with all cutting edge technology in Software Industry. Python Programming Language is very well suited for Beginners, also for experienced programmers with other programming languages like C++ and Java.</p>
+                <br/>
+                <button style="background-color: #388b38;">Enroll Now</button>
+            </div>
+            <div class="crsegrid">
+                <img src="{% static 'images/php.jpg' %}" alt="" style="height: 150px;width: 150px;">
+                <h3>PHP Full Stack Development</h3>
+                <p>PHP is an open-source server-side scripting language that many devs use for web development. It is also a general-purpose language that you can use to make lots of projects, including Graphical User Interfaces (GUIs).</p>
+                <br>
+                <button style="background-color: #388b38;">Enroll Now</button>
+            </div>
+            <div class="crsegrid">
+                <img src="{% static 'images/angular1.png' %}" alt="" style="height: 150px;width: 150px;"> 
+                <h3>Angular Full Stack Development</h3>
+                <p>This program would be a great choice for those who would like to work as a frontend developer in a software company . Baabtra offers internship programs in Front end development which makes a candidate capable of handling a client side application with Angular, Angular is a web application framework supported by Google</p>
+                <br>
+                <button style="background-color: #388b38;">Enroll Now</button>
+            </div>
+        </div>
+        <div class="footcontainer">
+            <div class="footgrid">
+                baabtra<br/>
+                Mentoring partner
+            </div>
+            <div class="footgrid">
+                <b>Email :</b> info@baabtra.com<br/>
+                <b>Phone :</b> +91-8592 058 444
+            </div>
+            <div class="footgrid">
+                <b>Address:</b> <br/>
+                5<sup>th</sup> Floor, CaFIT Square,<br/>Hilite Business Park, Kozhikode
+            </div>
+        </div>
+    </div>
+</body>
+</html>
